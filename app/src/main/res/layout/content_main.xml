@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.naveenrathore.tempconverter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+   <LinearLayout
+       android:layout_width="368dp"
+       android:layout_height="495dp"
+       android:orientation="vertical"
+       tools:layout_editor_absoluteY="8dp"
+       tools:layout_editor_absoluteX="8dp">
+
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:background="#f0f0"
+           android:gravity="center"
+           android:padding="10dp"
+           android:text="Tempertaure Converter"
+           android:textAllCaps="false"
+           android:textSize="30dp" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="150px"
+           android:layout_height="wrap_content"
+           android:text="Celsius"
+           android:textColor="@android:color/background_dark"
+           android:textSize="20dp"
+           android:layout_marginLeft="20px"
+           android:layout_marginTop="100px"/>
+
+       <EditText
+           android:id="@+id/cValue"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="number"
+           android:layout_marginTop="10px"
+           android:layout_marginLeft="20px"
+           android:paddingLeft="20px"
+           android:textAlignment="center"/>
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="200px"
+           android:layout_height="wrap_content"
+           android:text="Fahrenheit"
+           android:textColor="@android:color/background_dark"
+           android:textSize="20dp"
+           android:layout_marginLeft="20px"
+           android:layout_marginTop="100px"/>
+
+       <EditText
+           android:id="@+id/fValue"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="number"
+           android:paddingLeft="20px"
+           android:layout_marginTop="10px"
+           android:layout_marginLeft="20px"
+           android:textAlignment="center"/>
+
+       <Button
+           android:id="@+id/button"
+           android:layout_width="140dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30px"
+           android:layout_gravity="center"
+           android:text="CONVERT"
+           android:onClick="TempratureConverter"/>
+
+       <TextView
+           android:id="@+id/fResult"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:text=" "
+           android:layout_gravity="center"
+           android:layout_marginTop="20px"
+           android:textAlignment="center"/>
+
+       <TextView
+           android:id="@+id/cResult"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20px"
+           android:textSize="20dp"
+           android:text=" "
+           android:layout_gravity="center"
+           android:textAlignment="center"/>
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
